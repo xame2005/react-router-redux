@@ -1,8 +1,10 @@
 import React from "react";
+import { connect } from "react-redux";
+import { registerRequest } from "../actions";
 import { Link } from "react-router-dom";
 import "../assets/styles/components/Register.scss";
 
-const Register = () => (
+const Register = (props) => (
   <section className="register">
     <section className="register__container">
       <h2>Regístrate</h2>
@@ -17,4 +19,4 @@ const Register = () => (
   </section>
 );
 
-export default Register;
+export default connect(null, null)(Register);
